@@ -1,0 +1,240 @@
+/*
+Theme Name: Тема
+Theme URI: -
+Author: 123
+Author URI: -
+Description: Тема
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005177;
+}
+
+.site-header {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.site-description {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 10px 0 0;
+}
+
+.site-navigation {
+    margin-top: 20px;
+}
+
+.site-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.site-navigation ul li {
+    margin: 0 15px;
+}
+
+.site-navigation ul li a {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.site-navigation ul li a:hover {
+    color: #ccc;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.block {
+    margin-bottom: 40px;
+}
+
+.block h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.block .news-item, .block .staff-item {
+    margin-bottom: 20px;
+}
+
+.news-item h3, .staff-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.staff-item img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.staff-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.staff-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.staff-item img {
+    margin-bottom: 15px;
+}
+
+.staff-description {
+    font-size: 1em;
+    color: #666;
+}
+
+.news-list .news-item {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.news-list .news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.news-item .news-meta {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.contact-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для страницы вакансий */
+.vacancies-list .vacancy-item {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.vacancies-list .vacancy-item:last-child {
+    border-bottom: none;
+}
+
+.vacancy-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.vacancy-item .vacancy-meta {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.vacancy-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.vacancy-detail {
+    text-align: left;
+}
+
+.vacancy-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.vacancy-meta {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.vacancy-details p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.vacancy-content {
+    margin-top: 20px;
+}
+
+.vacancy-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,40 @@
+server {
+    listen 8000;
+    listen [::]:8000;
+
+    root /var/www/html;
+    index index.html index.htm index.php;
+
+    client_max_body_size 8M;
+
+    # Запрет на доступ к скрытым файлам
+    location ~ /\. {
+        deny all;
+    }
+
+    # Запрет на доступ к загруженным скриптам
+    location ~* /(?:uploads|files)/.*\.php$ {
+        deny all;
+    }
+
+    # Добавление слэша в конце для запросов */wp-admin
+    rewrite /wp-admin$ $scheme://$host$uri/ permanent;
+
+    # Поиск запрашиваемого URI по трем путям
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        # При ошибке 404 выдавать страницу, сформированную WordPress
+        try_files $uri =404;
+
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+
+        # При обращении к php передавать его на интерпретацию FPM
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param PATH_INFO       $fastcgi_path_info;
+        fastcgi_pass app:9000;
+    }
+}

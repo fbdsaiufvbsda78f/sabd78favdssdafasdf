@@ -1,0 +1,4 @@
+/.env
+/wp-config.php
+/docker-compose.local.yml
+/nginx.conf
